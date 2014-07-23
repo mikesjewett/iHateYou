@@ -21,6 +21,7 @@
 		275B837C180F114A00C3D3AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275B835E180F114A00C3D3AE /* UIKit.framework */; };
 		275B8384180F114A00C3D3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 275B8382180F114A00C3D3AE /* InfoPlist.strings */; };
 		275B8386180F114A00C3D3AE /* iHateYouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B8385180F114A00C3D3AE /* iHateYouTests.m */; };
+		275B8391180F3C5200C3D3AE /* MJIHateYou.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B8390180F3C5200C3D3AE /* MJIHateYou.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		275B8381180F114A00C3D3AE /* iHateYouTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iHateYouTests-Info.plist"; sourceTree = "<group>"; };
 		275B8383180F114A00C3D3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		275B8385180F114A00C3D3AE /* iHateYouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHateYouTests.m; sourceTree = "<group>"; };
+		275B838F180F3C5200C3D3AE /* MJIHateYou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIHateYou.h; sourceTree = "<group>"; };
+		275B8390180F3C5200C3D3AE /* MJIHateYou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIHateYou.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +115,13 @@
 		275B8360180F114A00C3D3AE /* iHateYou */ = {
 			isa = PBXGroup;
 			children = (
-				275B8369180F114A00C3D3AE /* MJAppDelegate.h */,
-				275B836A180F114A00C3D3AE /* MJAppDelegate.m */,
 				275B836C180F114A00C3D3AE /* Main.storyboard */,
 				275B836F180F114A00C3D3AE /* MJViewController.h */,
 				275B8370180F114A00C3D3AE /* MJViewController.m */,
 				275B8372180F114A00C3D3AE /* Images.xcassets */,
 				275B8361180F114A00C3D3AE /* Supporting Files */,
+				275B838F180F3C5200C3D3AE /* MJIHateYou.h */,
+				275B8390180F3C5200C3D3AE /* MJIHateYou.m */,
 			);
 			path = iHateYou;
 			sourceTree = "<group>";
@@ -126,6 +129,8 @@
 		275B8361180F114A00C3D3AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				275B8369180F114A00C3D3AE /* MJAppDelegate.h */,
+				275B836A180F114A00C3D3AE /* MJAppDelegate.m */,
 				275B8362180F114A00C3D3AE /* iHateYou-Info.plist */,
 				275B8363180F114A00C3D3AE /* InfoPlist.strings */,
 				275B8366180F114A00C3D3AE /* main.m */,
@@ -200,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Mike Jewett";
 				TargetAttributes = {
+					275B8356180F114A00C3D3AE = {
+						DevelopmentTeam = ZB6UAJJN27;
+					};
 					275B8377180F114A00C3D3AE = {
 						TestTargetID = 275B8356180F114A00C3D3AE;
 					};
@@ -252,6 +260,7 @@
 			files = (
 				275B8367180F114A00C3D3AE /* main.m in Sources */,
 				275B8371180F114A00C3D3AE /* MJViewController.m in Sources */,
+				275B8391180F3C5200C3D3AE /* MJIHateYou.m in Sources */,
 				275B836B180F114A00C3D3AE /* MJAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHateYou/iHateYou-Prefix.pch";
 				INFOPLIST_FILE = "iHateYou/iHateYou-Info.plist";
@@ -392,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHateYou/iHateYou-Prefix.pch";
 				INFOPLIST_FILE = "iHateYou/iHateYou-Info.plist";
@@ -461,6 +472,7 @@
 				275B838B180F114A00C3D3AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275B838C180F114A00C3D3AE /* Build configuration list for PBXNativeTarget "iHateYouTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +481,7 @@
 				275B838E180F114A00C3D3AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

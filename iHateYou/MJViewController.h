@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class MJIHateYou;
+
 @interface MJViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *insultLabel;
+@property (strong, nonatomic) MJIHateYou *iHateYou;
 
 @end
